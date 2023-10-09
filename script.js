@@ -5,9 +5,13 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-function playMusic() {
-  var audio = new Audio();
+var audio = new Audio();
+audio.src = './assets/msc2.mp3';
 
-  audio.src = './assets/msc2.mp3';
-  audio.play();
+function playMusic() {
+  if (audio.paused || audio.ended) {
+    audio.play();
+    audio.onended = function() {
+    };
+  }
 }
