@@ -8,6 +8,6 @@ function toggleMenu() {
 function playMusic() {
   var audio = new Audio();
 
-  audio.src = './assets/msc1.mp3';
+  audio.src = './assets/msc2.mp3';
   audio.play();
 }
