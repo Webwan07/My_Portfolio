@@ -15,3 +15,6 @@ function playMusic() {
     };
   }
 }
+function openGame() {
+    window.open('https://tetrisgamebyjosuan.onrender.com/', '_blank');
+}
